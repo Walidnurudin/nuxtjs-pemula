@@ -1,8 +1,19 @@
 <template>
   <div>
+    <headerApp/>
     <Nuxt />
   </div>
 </template>
+
+<script>
+import headerApp from "@/components/navbar"
+
+export default {
+  components: {
+    headerApp
+  }
+}
+</script>
 
 <style>
 html {
