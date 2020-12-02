@@ -7,8 +7,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
   data() {
     return {
@@ -17,8 +15,7 @@ export default {
   },
   methods: {
     getData() {
-      axios
-        .get('https://indonesia-covid-19.mathdro.id/api')
+      this.$api.get('/api')
         .then((res) => {
           this.covid = res.data;
         })
