@@ -13,8 +13,8 @@
     "@nuxtjs/pwa": "^3.0.2",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.20.1",
-    "core-js": "^3.6.5",
-    "nuxt": "^2.14.10"
+    "core-js": "^3.8.1",
+    "nuxt": "^2.14.9"
   },
   "devDependencies": {
     "eslint-config-prettier": "^7.0.0",
