@@ -8,9 +8,9 @@
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
-  "dependencies": {
+  "dependencies": 
     "@nuxtjs/axios": "^5.13.0",
-    "@nuxtjs/pwa": "^3.3.3",
+    "@nuxtjs/pwa": "^3.3.5",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.8.1",
