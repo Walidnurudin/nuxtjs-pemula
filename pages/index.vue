@@ -1,8 +1,9 @@
 <template>
   <div>
-    <div>
-      {{covid}}
+    <div v-if="err">
+      {{ errMessage }}
     </div>
+    {{ covid }}
   </div>
 </template>
 
@@ -10,16 +11,23 @@
 export default {
   data() {
     return {
-      covid: null
+      covid: null,
+      err: false,
+      errMessage: '',
     }
   },
   methods: {
     getData() {
-      this.$api.get('/api')
+      this.$api
+        .get('/api')
         .then((res) => {
-          this.covid = res.data;
+          this.covid = res.data
         })
-        .catch((err) => console.log(err))
+        .catch((err) => {
+          this.err = true
+          this.errMessage = err
+          console.log(err)
+        })
     },
   },
   mounted() {
