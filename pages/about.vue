@@ -1,10 +1,16 @@
 <template>
-  <div>about</div>
+  <div>
+    about
+    <span v-html="temp"></span>
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      temp: "<h1>Woke</h1>"
+    }
+  },
+}
 </script>
-
-<style>
-</style>
